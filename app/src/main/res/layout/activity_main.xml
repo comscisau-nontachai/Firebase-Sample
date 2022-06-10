@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:padding="16dp"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -12,6 +13,12 @@
         android:layout_width="match_parent"
         android:textAllCaps="false"
         android:text="Firebase Remote Config"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_cloud_messaging"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:text="Firebase Cloud Messaging"
         android:layout_height="wrap_content"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

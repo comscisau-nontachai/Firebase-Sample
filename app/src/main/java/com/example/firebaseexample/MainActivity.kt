@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.firebaseexample.databinding.ActivityMainBinding
+import com.example.firebaseexample.firebase_cloud_messaging.CloudMessagingActivity
 import com.example.firebaseexample.firebase_remote_config.RemoteConfigActivity
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnRemoteConfig.setOnClickListener {
             startActivity(Intent(this,RemoteConfigActivity::class.java))
+        }
+
+        binding.btnCloudMessaging.setOnClickListener {
+            startActivity(Intent(this,CloudMessagingActivity::class.java))
         }
     }
 }
